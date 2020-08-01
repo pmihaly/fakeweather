@@ -8,4 +8,4 @@ app.get('/historic-weather/:city/:date/:apiKey', (req, res) => {
     res.json({mintemp:"13", maxtemp:"25"});
 })
 
-app.listen(80, ()=>console.log('Server started on port 80...'));
+app.listen(process.env.PORT || 3000, ()=>console.log('Server started...'));
